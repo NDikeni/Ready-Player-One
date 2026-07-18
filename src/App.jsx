@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import icon from "../src/assets/pacman.svg" ;
+import './App.css';
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
     <div className="Body">
       <div id='homepage-elements'>
         {/*----Icon----*/}
-        <img src="src/assets/pacman.svg"/>
+        <img src={icon}/>
 
         {/*----Username----*/}
         <div class="input" id="username">
