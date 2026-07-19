@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import icon from "../src/assets/pacman.svg" ;
 import './App.css';
+import InputField from './components/InputField';
 
 function App() {
 
@@ -10,16 +11,15 @@ function App() {
         {/*----Icon----*/}
         <img src={icon}/>
 
-        {/*----Username----*/}
-        <div class="input" id="username">
-          <h3>Username: </h3>
-          <input type="text"></input>
-        </div>
+        <div id="interactive-elements">
+          {/*----Username----*/}
+          <div><InputField input="username" label="Username:"/></div>
 
-        {/*----Password----*/}
-        <div class="input">
-          <h3>Password: </h3>
-          <input type="text"></input>
+          {/*----Password----*/}
+          <InputField id="password" label="Password:"/>
+
+          {/*----EndGoal----*/}
+          <InputField label="What is your end goal?"/>
         </div>
 
       {/*----Login----*/}
