@@ -2,28 +2,46 @@ Body{
   width: 100%;
   height: 100%;
 }
+
+
 #interactive-elements{
   display: flex;
   flex-direction: column;
-
+  margin: 5% 0%;
 }
-#homepage-elements{
-  margin-top: 25%;
 
+#homepage-elements {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #homepage-elements img{
   width: 10%;
   height: auto;
-  margin-right: 10%;
+  margin-right: 4%;
   filter: invert(29%) sepia(85%) saturate(2250%) hue-rotate(346deg) brightness(87%) contrast(92%);
 }
 
-.input *{
-  display: inline-block;
-  margin-right: 5%;
+.input {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-bottom: 10px;
 }
 
+.input h3 {
+  width: 20rem;   /* same width for all labels */
+  margin: 0;
+  gap: 10%;
+  text-align: left;
+}
+
+.input input{
+  width: 19rem;
+  height: 1.5rem;
+}
 
 #username{
   margin-top: 10%;

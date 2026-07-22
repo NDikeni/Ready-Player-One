@@ -13,7 +13,7 @@ function App() {
 
         <div id="interactive-elements">
           {/*----Username----*/}
-          <div><InputField input="username" label="Username:"/></div>
+          <InputField id="username" label="Username:"/>
 
           {/*----Password----*/}
           <InputField id="password" label="Password:"/>
