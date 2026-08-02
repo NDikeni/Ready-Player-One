@@ -55,7 +55,8 @@
   width: 100%;                           /* Fluid size for mobile screens */
   max-width: 420px;                      /* Design safety limit for desktop */
   box-sizing: border-box;                /* Keeps layout math clean */
-  margin: 0 auto;
+  margin: auto auto;
+  min-height: 100vh;
 }
 
 #homepage-elements img{
