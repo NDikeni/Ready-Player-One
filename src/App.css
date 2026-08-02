@@ -53,7 +53,7 @@
   padding: 16px;                         /* Your Figma outer margin */
   
   width: 100%;                           /* Fluid size for mobile screens */
-  max-width: 420px;                      /* Design safety limit for desktop */
+  max-width: 800px;                      /* Design safety limit for desktop */
   box-sizing: border-box;                /* Keeps layout math clean */
   margin: auto auto;
 }
