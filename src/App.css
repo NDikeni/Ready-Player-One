@@ -56,7 +56,6 @@
   max-width: 420px;                      /* Design safety limit for desktop */
   box-sizing: border-box;                /* Keeps layout math clean */
   margin: auto auto;
-  min-width: 100vh;
 }
 
 #homepage-elements img{
