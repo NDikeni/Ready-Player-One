@@ -1,4 +1,4 @@
-Body{
+/*Body{
   width: 100%;
   height: 100%;
 }
@@ -21,7 +21,6 @@ Body{
   width: 10%;
   height: auto;
   margin-right: 4%;
-  filter: invert(29%) sepia(85%) saturate(2250%) hue-rotate(346deg) brightness(87%) contrast(92%);
 }
 
 .input {
@@ -32,17 +31,52 @@ Body{
 }
 
 .input h3 {
-  width: 20rem;   /* same width for all labels */
+  width: 20rem;   /* same width for all labels 
   margin: 0;
   gap: 10%;
   text-align: left;
 }
 
-.input input{
+.input text-input{
   width: 19rem;
   height: 1.5rem;
 }
 
 #username{
   margin-top: 10%;
+}*/
+
+#homepage-elements{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* Creates your 4 Figma columns */
+  gap: 12px;                             /* Your Figma column gutter */
+  padding: 16px;                         /* Your Figma outer margin */
+  
+  width: 100%;                           /* Fluid size for mobile screens */
+  max-width: 420px;                      /* Design safety limit for desktop */
+  box-sizing: border-box;                /* Keeps layout math clean */
+  margin: 0 auto;
+}
+
+#homepage-elements img{
+  grid-column: 2/4;
+  justify-self: center;
+  width: 50%;              /* Adjust this % to control the ideal size on mobile */
+  min-width: 120px;        /* Stops it from getting too tiny on small screens */
+  max-width: 200px;        /* Stops it from getting too huge on desktop */
+  height: auto;            /* Maintains original square aspect ratio */
+
+  /* CRITICAL FOR PIXEL ART */
+  image-rendering: pixelated; /* Keeps the pixels crisp and sharp when scaling */
+}
+
+#interactive-elements{
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#homepage-elements button{
+  grid-column: 1 / -1;
 }

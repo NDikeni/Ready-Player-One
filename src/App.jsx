@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import icon from "../src/assets/pacman.svg" ;
+import icon from "../src/assets/RP1.png" ;
 import './App.css';
 import InputField from './components/InputField';
 
@@ -26,6 +26,7 @@ function App() {
       <button>Begin</button>
       </div>
     </div>
+
   )
 }
 
