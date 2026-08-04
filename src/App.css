@@ -84,7 +84,7 @@
 
 
 #homepage-elements button{
-  grid-column: -2/-4;
+  grid-column: 2/4;
   margin-top: 65%;
   height: 10%;
 }
