@@ -2,7 +2,7 @@ import { useState } from 'react';
 import icon from "../src/assets/RP1.png" ;
 import './App.css';
 import InputField from './components/InputField';
-
+  
 function App() {
 
   return (
@@ -16,11 +16,12 @@ function App() {
           <InputField id="username" label="Username:"/>
 
           {/*----Password----*/}
-          <InputField id="password" label="Password:"/>
+          <InputField id="password" label="Password:" />
         </div>
 
       {/*----Login----*/}
       <button class="cta-button">Create Account</button>
+      {/*<footer><h2>Rescript</h2></footer>*/}
       </div>
     </div>
 

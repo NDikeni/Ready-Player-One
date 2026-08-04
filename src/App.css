@@ -51,7 +51,7 @@
 #homepage-elements{
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)); /* Creates your 4 Figma columns */
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto 1fr 0.1fr;
   gap: 12px;                             /* Your Figma column gutter */
   padding: 16px;                         /* Your Figma outer margin */
   
@@ -79,21 +79,34 @@
   grid-column: 1/5;
   display: flex;
   flex-direction: column;
-  gap: 50%;
 }
 
 
 #homepage-elements button{
   grid-column: 2/4;
-  margin-top: 65%;
-  height: 10%;
+  width: auto;
+  max-height: 3rem;
+  max-width: 25rem;
+  margin-top: 2rem;
 }
 
 #interactive-elements h6{
- margin-bottom: 2%;
+ margin: 1rem 0;
 }
 
 #interactive-elements input{
   width: 100%;
+  height: 2rem;
   box-sizing: border-box;
+  margin-bottom: 1rem ;
+}
+
+footer{
+  grid-column: 1/5;
+  background-color: black;
+}
+
+footer h2{
+  margin-top: 8rem;
+  color: white;
 }
