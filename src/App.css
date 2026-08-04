@@ -45,10 +45,13 @@
 #username{
   margin-top: 10%;
 }*/
-
+.Body{
+  background-color: var(--bg);
+}
 #homepage-elements{
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)); /* Creates your 4 Figma columns */
+  grid-template-rows: auto auto 1fr;
   gap: 12px;                             /* Your Figma column gutter */
   padding: 16px;                         /* Your Figma outer margin */
   
@@ -60,13 +63,14 @@
 }
 
 #homepage-elements img{
+  padding-top: 25%;
   grid-column: 2/4;
   justify-self: center;
   width: 50%;              /* Adjust this % to control the ideal size on mobile */
   min-width: 120px;        /* Stops it from getting too tiny on small screens */
   max-width: 200px;        /* Stops it from getting too huge on desktop */
   height: auto;            /* Maintains original square aspect ratio */
-
+  aspect-ratio: 1/1;
   /* CRITICAL FOR PIXEL ART */
   image-rendering: pixelated; /* Keeps the pixels crisp and sharp when scaling */
 }
@@ -75,15 +79,21 @@
   grid-column: 1/5;
   display: flex;
   flex-direction: column;
+  gap: 50%;
 }
 
 
 #homepage-elements button{
-  grid-column: 2/-2;
-  height: 2.625rem;
+  grid-column: -2/-4;
+  margin-top: 65%;
+  height: 10%;
+}
+
+#interactive-elements h6{
+ margin-bottom: 2%;
 }
 
 #interactive-elements input{
-  grid-column: 1/5;
-  
+  width: 100%;
+  box-sizing: border-box;
 }

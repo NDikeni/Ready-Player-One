@@ -130,3 +130,56 @@ code{
   background:var(--code-bg);
   box-shadow:var(--shadow);
 }*/
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Silkscreen:wght@400;700&display=swap');
+
+:root {
+  /*Colour Styles*/
+  --bg:#F9F5F1;
+
+  --ink:black;
+  --Antique-Blue:#3D5A80;
+  --Terracotta:#E07A5F;
+  --Sage:#7F9F7F;
+  
+  --Silkscreen: "Silkscreen",system-ui, -apple-system, sans-serif;
+  --Nunito:"Nunito",system-ui, -apple-system, sans-serif;
+}
+
+
+h1, h2, h3, h4{
+  font-family: var(--Silkscreen);
+  font-weight: 400;
+  color: var(--ink);
+}
+
+h5,h6{
+  font-family: var(--Nunito);
+  color: var(--ink);
+  font-weight: 400;
+  margin:0;
+}
+
+h1{font-size: 1.5rem;}
+h2{font-size: 1.125rem;}
+h3{font-size: 0.875rem;}
+h4,h6{font-size: 1rem;}
+h5{font-size: 1.25rem;}
+
+input{
+  border: 3px solid var(--ink);
+  background-color: var(--Sage);
+}
+
+.cta-button{
+  border: 3px solid var(--ink);
+  background-color: var(--Terracotta);
+  
+  /*Font*/
+  font-family: var(--Silkscreen);
+  font-weight: 400;
+  color: var(--ink);
+  font-size: 1rem;
+
+}

@@ -1,7 +1,7 @@
 const InputField = ({label}) => {
     return(
         <div class="text-input">
-          <h3>{label} </h3>
+          <h6>{label} </h6>
           <input type="text"></input>
         </div>
     )

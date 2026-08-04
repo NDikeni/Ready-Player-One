@@ -17,13 +17,10 @@ function App() {
 
           {/*----Password----*/}
           <InputField id="password" label="Password:"/>
-
-          {/*----EndGoal----*/}
-          <InputField label="What is your end goal?"/>
         </div>
 
       {/*----Login----*/}
-      <button>Begin</button>
+      <button class="cta-button">Create Account</button>
       </div>
     </div>
 
